@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Nikita](https://up.htmlacademy.ru/htmlcss/21/user/807577).
-* Наставник: `Неизвестно`.
+* Наставник: [Инна Кришталь](https://up.htmlacademy.ru/htmlcss/21/user/43485).
 
 ---
 
