@@ -17,23 +17,23 @@
 				</ul>
 				<ul class="user-navigation">
 					<li class="search">
-						<form action="https://echo.htmlacademy.ru" method="post">
-							<label>
+						<form class="user-navigation-form" action="https://echo.htmlacademy.ru" method="post">
+							<label class="search-icon">
 								<span class="visually-hidden">Поиск</span>
-								<input class="visually hidden" name="search" type="search" placeholder="Что ищем?">
-								<span class="search-icon"></span>
+								<input class="visually-hidden" name="search" type="search" placeholder="Что ищем?">
 							</label>
+							<button class="buttons visually-hidden" type="submit">Найти</button>
 						</form>
 					</li>
-					<li class="account-link">
-						<a href="entrance.html">Вход</a>
+					<li class="login">
+						<a class="entrance" href="entrance.html">Вход</a>
 					</li>
 					<li class="basket">Корзина</li>
 				</ul>
 			</nav>
 			<p class="main-header-info">
 				<span>С 10 до 20, ежедневно</span>
-				<button type="button">8(812)-450-25-25</button>
+				<a href="#">8(812)-450-25-25</a>
 			</p>
 		</header>
 		<main class="container">
@@ -65,7 +65,7 @@
 					<li class="assortment-item">
 						<p class="assortment-item-image">
 							<a href="assortment-item.html">
-								<img src="img/Сливочное с апельсиновым джемом и цитрусовой стружкой.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+								<img src="img/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267" alt="creamy-with-orange-jam-and-citrus-shavings">
 							</a>
 						</p>
 						<strong class="assortment-item-price">310 ₽<span>/кг</span></strong>
@@ -75,7 +75,7 @@
 					<li class="assortment-item">
 						<p class="assortment-item-image">
 							<a href="assortment-item.html">
-								<img src="img/Сливочно-кофейное с кусочками шоколада.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+								<img src="img/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267" alt="creamy-coffee-with-pieces-of-chocolate">
 							</a>
 						</p>
 						<strong class="assortment-item-price">380 ₽<span>/кг</span></strong>
@@ -85,7 +85,7 @@
 					<li class="assortment-item">
 						<p class="assortment-item-image">
 							<a href="assortment-item.html">
-								<img src="img/Сливочно-клубничное с присыпкой из белого шоколада.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+								<img src="img/creamy-strawberry-with-powder-of-white-chocolate.jpg" width="267" height="267" alt="creamy-strawberry-with-powder-of-white-chocolate">
 							</a>
 						</p>
 						<strong class="assortment-item-price">355 ₽<span>/кг</span></strong>
@@ -95,7 +95,7 @@
 					<li class="assortment-item">
 						<p class="assortment-item-image">
 							<a href="assortment-item.html">
-								<img src="img/Сливочное крем-брюле с карамельной подливкой.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+								<img src="img/creamy-creme-brulee-with-caramel-gravy.jpg" width="267" height="267" alt="creamy-creme-brulee-with-caramel-gravy">
 							</a>
 						</p>
 						<strong class="assortment-item-price">415 ₽<span>/кг</span></strong>
@@ -139,9 +139,9 @@
 				<p>
 					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно! =)
 				</p>
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<label for="distribution-subscribe"></label>
-					<input id="distribution-subscribe" type="email" name="email" placeholder="Электронная почта">
+				<form class="distribution-form" action="https://echo.htmlacademy.ru" method="post">
+					<label for="distribution-subscribe" class="visually-hidden">Электронная почта</label>
+					<input id="distribution-subscribe" name="email" type="email" placeholder="Электронная почта">
 					<button class="buttons" type="submit">Отправить</button>
 				</form>
 			</section>
@@ -159,29 +159,29 @@
 						<b>8 812 450-25-25</b><br>
 						(С 10 до 20 ежедневно)
 					</p>
-						<a class="buttons" href="feedback-form.html">Форма обратной связи</a>
+						<a class="buttons feedback" href="feedback.html">Форма обратной связи</a>
 				</div>
-				<a href="map.html">
+				<a class="map" href="map.html">
 					<img src="img/map.jpg" width="100%" alt="Местонахождение на карте">
 				</a>
 			</section>
 		</main>
 		<footer class="main-footer">
 			<section class="footer-social">
-				<ul>
-					<li><a class="social-button" href="#">Твиттер</a></li>
-					<li><a class="social-button" href="#">Инстаграмм</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Вконтакте</a></li>
+				<ul class="footer-social-list">
+					<li class="footer-social-item"><a class="social-button" href="#">Твиттер</a></li>
+					<li class="footer-social-item"><a class="social-button" href="#">Инстаграмм</a></li>
+					<li class="footer-social-item"><a class="social-button" href="#">Фейсбук</a></li>
+					<li class="footer-social-item"><a class="social-button" href="#">Вконтакте</a></li>
 				</ul>
 			</section>
 
 			<section class="footer-info">
-				<ul>
-					<li><a href="#">Для поставщиков</a></li>
-					<li><a href="#">О производстве</a></li>
-					<li><a href="#">Наши документы</a></li>
-					<li><a href="#">Экологические стандарты</a></li>
+				<ul class="footer-info-list">
+					<li class="footer-info-item"><a href="#">Для поставщиков</a></li>
+					<li class="footer-info-item"><a href="#">О производстве</a></li>
+					<li class="footer-info-item"><a href="#">Наши документы</a></li>
+					<li class="footer-info-item"><a href="#">Экологические стандарты</a></li>
 				</ul>
 			</section>
 
@@ -194,5 +194,33 @@
 				</p>
 			</section>
 		</footer>
+
+		<section class="modal-login">
+			<h3 class="visually-hidden">Вход в личный кабинет</h3>
+			<form class="modal-login-form" action="https://echo.htmlacademy.ru" method="get">
+				<label for="modal-login-email" class="visually-hidden">Электронная почта</label>
+				<input id="modal-login-email" name="email" type="email" placeholder="Электронная почта" required>
+				<label for="modal-login-password" class="visually-hidden">Пароль</label>
+				<input id="modal-login-password" name="password" type="password" placeholder="Пароль" required>
+				<a class="restore" href="restore.html">Забыли пароль?</a>
+				<a class="registrate" href="registrate.html">Новая регистрация</a>
+				<button class="buttons" type="submit">Войти</button>
+			</form>
+		</section>
+
+		<section class="modal-feedback">
+			<h3>Мы обязательно вам ответим!</h3>
+			<form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="get">
+				<label for="modal-feedback-name" class="visually-hidden">Как вас зовут?</label>
+				<input id="modal-feedback-name" name="name" type="text" placeholder="Как вас зовут?" required>
+				<label for="modal-feedback-email" class="visually-hidden">Ваша почта для ответа?</label>
+				<input id="modal-feedback-email" name="email" type="email" placeholder="Ваша почта для ответа?" required>
+				<textarea class="modal-feedback-comment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+				<button class="buttons" type="submit">Отправить</button>
+			</form>
+			<button class="modal-close" type="button">&#10008;
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</section>
 	</body>
 </html>
