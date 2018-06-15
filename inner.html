@@ -17,12 +17,10 @@
 				</ul>
 				<ul class="user-navigation">
 					<li class="search">
-						<form action="https://echo.htmlacademy.ru" method="post">
-							<label class="search-icon">
-								<span class="visually-hidden">Поиск</span>
-								<input class="visually-hidden" name="search" type="search" placeholder="Что ищем?">
-							</label>
-							<button class="visually-hidden" type="submit"></button>
+						<form class="user-navigation-form" action="https://echo.htmlacademy.ru" method="post">
+							<label for="user-navigation-serach" class="search-icon">Поиск</label>
+							<input id="user-navigation-serach" class="visually-hidden" name="search" type="search" placeholder="Что ищем?">
+							<button class="buttons visually-hidden" type="submit">Найти</button>
 						</form>
 					</li>
 					<li class="login">
@@ -32,8 +30,8 @@
 				</ul>
 			</nav>
 			<p class="main-header-info">
-				<span>С 10 до 20, ежедневно</span>
-				<a href="#">8(812)-450-25-25</a>
+				С 10 до 20, ежедневно
+				<a href="tel:+88124502525">8(812)-450-25-25</a>
 			</p>
 		</header>
 		<main class="container">
@@ -45,19 +43,24 @@
 			</ul>
 			<h1>Сливочное мороженое</h1>
 			<section class="filters">
-				<div class="filters-sorting">Сортировка:
-					<select name="sorting">
-						<option value="rating">по рейтингу</option>
-						<option value="cheap">по возрастанию цены</option>
-						<option value="expensive">по убыванию цены</option>
-					</select>
-				</div>
 				<form action="https://echo.htmlacademy.ru" method="get">
-					<div class="filters-price">Цена: 100 руб. - 500 руб.
+					<fieldset class="filters-sorting">
+						<legend>Сортировка:</legend>
+						<select class="filters-wrapper" name="sorting">
+							<option value="rating">по рейтингу</option>
+							<option value="cheap">по возрастанию цены</option>
+							<option value="expensive">по убыванию цены</option>
+						</select>
+					</fieldset>
+					<fieldset class="filters-price">
+						<legend>Цена: 100 руб. - 500 руб.</legend>
+						<div class="filters-wrapper">
 							<input name="price" type="range" min="100" max="500" step="1">
-					</div>
-					<div class="filters-fat">Жирность:
-						<ul class="filters-fat-list">
+						</div>
+					</fieldset>
+					<fieldset class="filters-fat">
+						<legend>Жирность:</legend>
+						<ul class="filters-fat-list filters-wrapper">
 							<li class="filters-fat-item">
 								<label for="filters-fat-zero-percent" class="radio-indicator">0%</label>
 								<input id="filters-fat-zero-percent" class="visually-hidden" name="fat" type="radio">
@@ -75,9 +78,10 @@
 								<input id="filters-fat-above-thirty-percent" class="visually-hidden" name="fat" type="radio">
 							</li>
 						</ul>
-					</div>
-					<div class="filters-fillers">
-						<ul class="filters-fillers-list">
+					</fieldset>
+					<fieldset class="filters-fillers">
+						<legend>Наполнители:</legend>
+						<ul class="filters-fillers-list filters-wrapper">
 							<li class="filters-fillers-item">
 								<label for="filters-fillers-chocolate" class="checkbox-indicator">шоколадный</label>
 								<input id="filters-fillers-chocolate" class="visually-hidden" name="chocolate" type="checkbox" checked>
@@ -99,8 +103,8 @@
 									<input id="filters-fillers-jam" class="visually-hidden" name="jam" type="checkbox">
 							</li>
 						</ul>
-						<button class="buttons" type="submit">Применить</button>
-					</div>
+					</fieldset>
+					<button class="buttons" type="submit">Применить</button>
 				</form>
 			</section>
 

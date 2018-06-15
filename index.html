@@ -18,10 +18,8 @@
 				<ul class="user-navigation">
 					<li class="search">
 						<form class="user-navigation-form" action="https://echo.htmlacademy.ru" method="post">
-							<label class="search-icon">
-								<span class="visually-hidden">Поиск</span>
-								<input class="visually-hidden" name="search" type="search" placeholder="Что ищем?">
-							</label>
+							<label for="user-navigation-serach" class="search-icon">Поиск</label>
+							<input id="user-navigation-serach" class="visually-hidden" name="search" type="search" placeholder="Что ищем?">
 							<button class="buttons visually-hidden" type="submit">Найти</button>
 						</form>
 					</li>
@@ -32,8 +30,8 @@
 				</ul>
 			</nav>
 			<p class="main-header-info">
-				<span>С 10 до 20, ежедневно</span>
-				<a href="#">8(812)-450-25-25</a>
+				С 10 до 20, ежедневно
+				<a href="tel:+88124502525">8(812)-450-25-25</a>
 			</p>
 		</header>
 		<main class="container">
@@ -47,14 +45,14 @@
 						<p>
 							При покупке 2кг любого мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
 						</p>
-						<button class="buttons" type="button">Хочу варенье!</button>
+						<a class="buttons" href="special-offers-raspberry.html">Хочу варенье!</a>
 					</li>
 					<li class="special-offers-item">
 						<h2>Шоколадки даром!</h2>
 						<p>
 							При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
 						</p>
-						<button class="buttons" type="button">Хочу шоколадки!</button>
+						<a class="buttons" href="special-offers-chocolate.html">Хочу шоколадки!</a>
 					</li>
 				</ul>
 			</section>
@@ -129,9 +127,7 @@
 			<article class="news">
 				<p>
 					Новости в нашем блоге<br>
-					<b>
-						<a href="news.html">10 способов сортировки фруктовых щербетов к столу</a>
-					</b>
+					<a class="news-item" href="news.html">10 способов сортировки фруктовых щербетов к столу</a>
 				</p>
 			</article>
 
@@ -161,9 +157,7 @@
 					</p>
 						<a class="buttons feedback" href="feedback.html">Форма обратной связи</a>
 				</div>
-				<a class="map" href="map.html">
-					<img src="img/map.jpg" width="100%" alt="Местонахождение на карте">
-				</a>
+				<img class="contacts-map" src="img/map.jpg" width="100%" alt="Местонахождение на карте">
 			</section>
 		</main>
 		<footer class="main-footer">
