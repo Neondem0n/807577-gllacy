@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси-каталог></title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -20,13 +23,13 @@
 						<form class="user-navigation-form" action="https://echo.htmlacademy.ru" method="post">
 							<label for="user-navigation-serach" class="search-icon">Поиск</label>
 							<input id="user-navigation-serach" class="visually-hidden" name="search" type="search" placeholder="Что ищем?">
-							<button class="buttons visually-hidden" type="submit">Найти</button>
+							<button class="button visually-hidden" type="submit">Найти</button>
 						</form>
 					</li>
 					<li class="login">
 						<a class="entrance" href="entrance.html">Вход</a>
 					</li>
-					<li class="basket">Корзина</li>
+					<li class="basket"><a>Корзина</a></li>
 				</ul>
 			</nav>
 			<p class="main-header-info">
@@ -43,11 +46,11 @@
 			</ul>
 			<h1>Сливочное мороженое</h1>
 			<section class="filters">
-				<form action="https://echo.htmlacademy.ru" method="get">
+				<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
 					<fieldset class="filters-sorting">
 						<legend>Сортировка:</legend>
 						<select class="filters-wrapper" name="sorting">
-							<option value="rating">по рейтингу</option>
+							<option value="popular">по популярности</option>
 							<option value="cheap">по возрастанию цены</option>
 							<option value="expensive">по убыванию цены</option>
 						</select>
@@ -83,11 +86,11 @@
 						<legend>Наполнители:</legend>
 						<ul class="filters-fillers-list filters-wrapper">
 							<li class="filters-fillers-item">
-								<label for="filters-fillers-chocolate" class="checkbox-indicator">шоколадный</label>
+								<label for="filters-fillers-chocolate" class="checkbox-indicator">шоколадные</label>
 								<input id="filters-fillers-chocolate" class="visually-hidden" name="chocolate" type="checkbox" checked>
 							</li>
 							<li class="filters-fillers-item">
-								<label for="filters-fillers-sugar-powder" class="checkbox-indicator">сахарная присыпка</label>
+								<label for="filters-fillers-sugar-powder" class="checkbox-indicator">сахарные присыпки</label>
 								<input id="filters-fillers-sugar-powder" class="visually-hidden" name="sugar-powder" type="checkbox" checked>
 							</li>
 							<li class="filters-fillers-item">
@@ -95,16 +98,16 @@
 									<input id="filters-fillers-fruit" class="visually-hidden" name="fruit" type="checkbox">
 							</li>
 							<li class="filters-fillers-item">
-								<label for="filters-fillers-syrup" class="checkbox-indicator">сироп</label>
+								<label for="filters-fillers-syrup" class="checkbox-indicator">сиропы</label>
 									<input for="filters-fillers-syrup" class="visually-hidden" name="syrup" type="checkbox">
 							</li>
 							<li class="filters-fillers-item">
-								<label for="filters-fillers-jam" class="checkbox-indicator">джем</label>
+								<label for="filters-fillers-jam" class="checkbox-indicator">джемы</label>
 									<input id="filters-fillers-jam" class="visually-hidden" name="jam" type="checkbox">
 							</li>
 						</ul>
 					</fieldset>
-					<button class="buttons" type="submit">Применить</button>
+					<button class="filters-form-button" type="submit">Применить</button>
 				</form>
 			</section>
 
@@ -119,7 +122,7 @@
 						</p>
 						<strong class="assortment-item-price">310 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -129,7 +132,7 @@
 						</p>
 						<strong class="assortment-item-price">380 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочно-кофейное с кусочками шоколада</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -139,7 +142,7 @@
 						</p>
 						<strong class="assortment-item-price">355 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочно-клубничное с присыпкой из белого шоколада</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -149,7 +152,7 @@
 						</p>
 						<strong class="assortment-item-price">415 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочное крем-брюле с карамельной подливкой</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -159,7 +162,7 @@
 						</p>
 						<strong class="assortment-item-price">325 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочное с брусничным джемом</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -169,7 +172,7 @@
 						</p>
 						<strong class="assortment-item-price">410 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочно-черничное с цельными ягодами черники</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -179,7 +182,7 @@
 						</p>
 						<strong class="assortment-item-price">375 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочно-лимонное с карамельной присыпкой</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -189,7 +192,7 @@
 						</p>
 						<strong class="assortment-item-price">320 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочное с шоколадной стружкой</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -199,7 +202,7 @@
 						</p>
 						<strong class="assortment-item-price">440 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочно-ванильное с кусочками шоколада</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -209,7 +212,7 @@
 						</p>
 						<strong class="assortment-item-price">435 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочное с ментоловым сиропом</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -219,7 +222,7 @@
 						</p>
 						<strong class="assortment-item-price">355 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочное с кусочками чёрного шоколада</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
 						<p class="assortment-item-image">
@@ -229,17 +232,17 @@
 						</p>
 						<strong class="assortment-item-price">420 ₽<span>/кг</span></strong>
 						<p class="assortment-item-title">Сливочное с мятным сиропом</p>
-						<button class="buttons" type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 				</ul>
 				<ul class="pagination-list">
-					<li class="pagination-item"><a href="#">&lt;</a></li>
-					<li class="pagination-item pagination-item-current"><a>1</a></li>
-					<li class="pagination-item"><a href="#">2</a></li>
-					<li class="pagination-item"><a href="#">3</a></li>
-					<li class="pagination-item"><a href="#">4</a></li>
-					<li class="pagination-item"><a href="#">5</a></li>
-					<li class="pagination-item"><a href="#">&gt;</a></li>
+					<li><a href="#">&lt;</a></li>
+					<li class="pagination-item-current"><a>1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&gt;</a></li>
 				</ul>
 			</section>
 		</main>
@@ -281,7 +284,7 @@
 				<input id="modal-login-password" name="password" type="password" placeholder="Пароль" required>
 				<a class="restore" href="restore.html">Забыли пароль?</a>
 				<a class="registrate" href="registrate.html">Новая регистрация</a>
-				<button class="buttons" type="submit">Войти</button>
+				<button class="button" type="submit">Войти</button>
 			</form>
 		</section>
 	</body>
