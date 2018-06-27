@@ -7,7 +7,7 @@
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
@@ -21,8 +21,8 @@
 				<ul class="user-navigation">
 					<li class="search">
 						<form class="user-navigation-form" action="https://echo.htmlacademy.ru" method="post">
-							<label for="user-navigation-serach" class="search-icon">Поиск</label>
-							<input id="user-navigation-serach" class="visually-hidden" name="search" type="search" placeholder="Что ищем?">
+							<label for="user-navigation-search" class="search-icon">Поиск</label>
+							<input id="user-navigation-search" class="visually-hidden" name="search" type="search" placeholder="Что ищем?">
 							<button class="button visually-hidden" type="submit">Найти</button>
 						</form>
 					</li>
@@ -33,7 +33,7 @@
 				</ul>
 			</nav>
 			<p class="main-header-info">
-				С 10 до 20, ежедневно
+				С 10 до 20, ежедневно<br>
 				<a href="tel:+88124502525">8(812)-450-25-25</a>
 			</p>
 		</header>
@@ -65,20 +65,20 @@
 						<legend>Жирность:</legend>
 						<ul class="filters-fat-list filters-wrapper">
 							<li class="filters-fat-item">
-								<label for="filters-fat-zero-percent" class="radio-indicator">0%</label>
 								<input id="filters-fat-zero-percent" class="visually-hidden" name="fat" type="radio">
+								<label for="filters-fat-zero-percent" class="radio-indicator">0%</label>
 							</li>
 							<li class="filters-fat-item">
-								<label for="filters-fat-to-ten-percent" class="radio-indicator">до 10%</label>
 								<input id="filters-fat-to-ten-percent" class="visually-hidden" name="fat" type="radio" checked>
+								<label for="filters-fat-to-ten-percent" class="radio-indicator">до 10%</label>
 							</li>
 							<li class="filters-fat-item">
-								<label for="filters-fat-to-thirty-percent" class="radio-indicator">до 30%</label>
 								<input id="filters-fat-to-thirty-percent" class="visually-hidden" name="fat" type="radio">
+								<label for="filters-fat-to-thirty-percent" class="radio-indicator">до 30%</label>
 							</li>
 							<li class="filters-fat-item">
-								<label for="filters-fat-above-thirty-percent" class="radio-indicator">выше 30%</label>
 								<input id="filters-fat-above-thirty-percent" class="visually-hidden" name="fat" type="radio">
+								<label for="filters-fat-above-thirty-percent" class="radio-indicator">выше 30%</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -86,24 +86,24 @@
 						<legend>Наполнители:</legend>
 						<ul class="filters-fillers-list filters-wrapper">
 							<li class="filters-fillers-item">
-								<label for="filters-fillers-chocolate" class="checkbox-indicator">шоколадные</label>
 								<input id="filters-fillers-chocolate" class="visually-hidden" name="chocolate" type="checkbox" checked>
+								<label for="filters-fillers-chocolate" class="checkbox-indicator">шоколадные</label>
 							</li>
 							<li class="filters-fillers-item">
-								<label for="filters-fillers-sugar-powder" class="checkbox-indicator">сахарные присыпки</label>
 								<input id="filters-fillers-sugar-powder" class="visually-hidden" name="sugar-powder" type="checkbox" checked>
+								<label for="filters-fillers-sugar-powder" class="checkbox-indicator">сахарные присыпки</label>
 							</li>
 							<li class="filters-fillers-item">
-								<label for="filters-fillers-fruit" class="checkbox-indicator">фрукты</label>
 									<input id="filters-fillers-fruit" class="visually-hidden" name="fruit" type="checkbox">
+									<label for="filters-fillers-fruit" class="checkbox-indicator">фрукты</label>
 							</li>
 							<li class="filters-fillers-item">
+								<input for="filters-fillers-syrup" class="visually-hidden" name="syrup" type="checkbox">
 								<label for="filters-fillers-syrup" class="checkbox-indicator">сиропы</label>
-									<input for="filters-fillers-syrup" class="visually-hidden" name="syrup" type="checkbox">
 							</li>
 							<li class="filters-fillers-item">
+								<input id="filters-fillers-jam" class="visually-hidden" name="jam" type="checkbox">
 								<label for="filters-fillers-jam" class="checkbox-indicator">джемы</label>
-									<input id="filters-fillers-jam" class="visually-hidden" name="jam" type="checkbox">
 							</li>
 						</ul>
 					</fieldset>
@@ -115,123 +115,123 @@
 				<h2 class="visually-hidden">Ассортимент мороженого</h2>
 				<ul class="assortment-list">
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267" alt="creamy-with-orange-jam-and-citrus-shavings">
 							</a>
 						</p>
-						<strong class="assortment-item-price">310 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+						<strong class="assortment-price">310 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267" alt="creamy-coffee-with-pieces-of-chocolate">
 							</a>
 						</p>
-						<strong class="assortment-item-price">380 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочно-кофейное с кусочками шоколада</p>
+						<strong class="assortment-price">380 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочно-кофейное с кусочками шоколада</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-strawberry-with-powder-of-white-chocolate.jpg" width="267" height="267" alt="creamy-strawberry-with-powder-of-white-chocolate">
 							</a>
 						</p>
-						<strong class="assortment-item-price">355 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочно-клубничное с присыпкой из белого шоколада</p>
+						<strong class="assortment-price">355 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочно-клубничное с присыпкой из белого шоколада</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-creme-brulee-with-caramel-gravy.jpg" width="267" height="267" alt="creamy-creme-brulee-with caramel-gravy">
 							</a>
 						</p>
-						<strong class="assortment-item-price">415 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочное крем-брюле с карамельной подливкой</p>
+						<strong class="assortment-price">415 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочное крем-брюле с карамельной подливкой</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-with-cranberry-jam.jpg" width="267" height="267" alt="creamy-with-cranberry-jam">
 							</a>
 						</p>
-						<strong class="assortment-item-price">325 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочное с брусничным джемом</p>
+						<strong class="assortment-price">325 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочное с брусничным джемом</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/cream-blueberry-with-whole-berries-of-blueberries.jpg" width="267" height="267" alt="cream-blueberry-with-whole-berries-of-blueberries">
 							</a>
 						</p>
-						<strong class="assortment-item-price">410 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочно-черничное с цельными ягодами черники</p>
+						<strong class="assortment-price">410 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочно-черничное с цельными ягодами черники</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-lemon-with-caramel-powder.jpg" width="267" height="267" alt="creamy-lemon-with-caramel-powder">
 							</a>
 						</p>
-						<strong class="assortment-item-price">375 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочно-лимонное с карамельной присыпкой</p>
+						<strong class="assortment-price">375 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочно-лимонное с карамельной присыпкой</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-with-chocolate-shavings.jpg" width="267" height="267" alt="creamy-with-chocolate-shavings">
 							</a>
 						</p>
-						<strong class="assortment-item-price">320 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочное с шоколадной стружкой</p>
+						<strong class="assortment-price">320 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочное с шоколадной стружкой</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-vanilla-with-pieces-of-chocolate.jpg" width="267" height="267" alt="creamy-vanilla-with-pieces-of-chocolate">
 							</a>
 						</p>
-						<strong class="assortment-item-price">440 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочно-ванильное с кусочками шоколада</p>
+						<strong class="assortment-price">440 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочно-ванильное с кусочками шоколада</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-with-menthol-syrup.jpg" width="267" height="267" alt="creamy-with-menthol-syrup">
 							</a>
 						</p>
-						<strong class="assortment-item-price">435 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочное с ментоловым сиропом</p>
+						<strong class="assortment-price">435 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочное с ментоловым сиропом</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-with-pieces-of-black-chocolate.jpg" width="267" height="267" alt="creamy-with-pieces-of-black-chocolate">
 							</a>
 						</p>
-						<strong class="assortment-item-price">355 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочное с кусочками чёрного шоколада</p>
+						<strong class="assortment-price">355 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочное с кусочками чёрного шоколада</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li class="assortment-item">
-						<p class="assortment-item-image">
+						<p class="assortment-image">
 							<a href="assortment-item.html">
 								<img src="img/creamy-with-mint-syrup.jpg" width="267" height="267" alt="creamy-with-mint-syrup">
 							</a>
 						</p>
-						<strong class="assortment-item-price">420 ₽<span>/кг</span></strong>
-						<p class="assortment-item-title">Сливочное с мятным сиропом</p>
+						<strong class="assortment-price">420 ₽<span>/кг</span></strong>
+						<p class="assortment-title">Сливочное с мятным сиропом</p>
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 				</ul>
@@ -282,8 +282,8 @@
 				<input id="modal-login-email" name="email" type="email" placeholder="Электронная почта" required>
 				<label for="modal-login-password" class="visually-hidden">Пароль</label>
 				<input id="modal-login-password" name="password" type="password" placeholder="Пароль" required>
-				<a class="restore" href="restore.html">Забыли пароль?</a>
-				<a class="registrate" href="registrate.html">Новая регистрация</a>
+				<a class="modal-login-restore" href="restore.html">Забыли пароль?</a>
+				<a class="modal-login-registrate" href="registrate.html">Новая регистрация</a>
 				<button class="button" type="submit">Войти</button>
 			</form>
 		</section>
