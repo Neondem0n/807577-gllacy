@@ -1639,6 +1639,7 @@ body:not(.inner-page) .assortment-item::before {
 	top: 338px;
 	left: 50%;
 
+	display: none;
 	width: 478px;
 	margin-left: -239px;
 }
